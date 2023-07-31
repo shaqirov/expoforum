@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* --------------------Шрифты----------------------------- */
+@font-face {
+  font-family: Circe;
+  src: url(../fonts/Circe-Regular.ttf) format(truetype);
+}
+@font-face {
+  font-family: Plumb;
+  src: url(../fonts/plumb-regular.otf) format(opentype);
+}
+@font-face {
+  font-family: Plumb-bold;
+  src: url(../fonts/plumb-bold.otf) format(opentype);
+}
+/* -------------------------------------------------------- */
+* {
+  /* border: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* ----------------------НАВИГАЦИЯ--------------------------- */
+.wrapper_header {
+  background-image: url(../images/bg_img.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 633px;
+}
+.wrapper_header .nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.wrapper_header .logo {
+  color: white;
+  margin-left: 145px;
+}
+.wrapper_header .nav-list > ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-right: 50px;
+}
+.wrapper_header .nav-list > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  font-family: Circe;
+  margin-right: 50px;
+}
+.wrapper_header .nav-list > ul > li > a:hover {
+  border-bottom: 2px solid #2378FC;
+  padding: 1px;
+}
+.wrapper_header .search {
+  margin-left: 80px;
+}
+.wrapper_header hr {
+  margin-top: 13px;
+}
+
+/* --------------------------------------------------- */
+/* ----------------НАВИГАЦИЯ (БЛОКИ)------------------ */
+.grid {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  grid-template-columns: 340px 210px 210px;
+  grid-template-rows: 130px 120px 120px;
+  gap: 30px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.grid .grid_item_title {
+  display: flex;
+  align-items: end;
+}
+.grid .title {
+  font-family: Plumb-bold;
+  font-size: 50px;
+  color: white;
+}
+.grid .grid_item_title_two > .p_one {
+  color: white;
+  font-size: 24px;
+  font-family: "Circe";
+}
+.grid .grid_item_title_two > .p_two {
+  color: white;
+  font-size: 16px;
+  font-family: "Circe";
+}
+.grid .grid_item_blue {
+  display: flex;
+  flex-direction: column;
+  background-color: #2378FC;
+  font-family: "Plumb";
+  justify-content: center;
+}
+.grid .grid_item_blue > a {
+  text-decoration: none;
+  color: white;
+}
+.grid .p_three {
+  margin-left: 40px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.grid .p_four {
+  margin-left: 40px;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+.grid .grid_item_green {
+  display: flex;
+  flex-direction: column;
+  background-color: #30BCC9;
+  font-family: "Plumb";
+  justify-content: center;
+}
+.grid .grid_item_green > a {
+  text-decoration: none;
+  color: white;
+}
+.grid .grid_item_yellow {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFC41E;
+  font-family: "Plumb";
+  justify-content: center;
+}
+.grid .grid_item_yellow > a {
+  text-decoration: none;
+  color: white;
+}
+.grid .grid_item_red {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6404F;
+  font-family: "Plumb";
+  justify-content: center;
+}
+.grid .grid_item_red > a {
+  text-decoration: none;
+  color: white;
+}
+
+/* --------------------------------------------------- */
+
+/*# sourceMappingURL=style.css.map */
