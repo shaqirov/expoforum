@@ -1,0 +1,485 @@
+/* ----------Адаптация под другие размеры экрана------------- */
+
+/* ----------------------РАЗМЕР--XS-------------------------- */
+/* ----------------------НАВИГАЦИЯ--------------------------- */
+@media (max-width: 576px) {
+    .wrapper_header {
+        background-size: cover;
+        max-width: 100%;
+        height: 1050px;
+        .nav {
+            padding-top: 20px;
+        }
+        .logo {
+            margin-left: 40px;
+        }  
+        .nav-list>ul {
+            flex-direction: column;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+        .nav-list>ul>li>a {
+            margin: 0;
+            padding-right: 30px;
+        }
+        .search {
+            margin-left: 0;
+        }
+    }
+/* ---------------------------------------------------------- */
+
+/* --------------------НАВИГАЦИЯ (БЛОКИ)--------------------- */
+    .grid {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+        .grid_item {
+        display: none;
+        &_title {
+            justify-content: center;
+        }
+        }
+        .grid_item_title_two {
+            .p_one {
+            justify-content: center;
+            text-align: center;
+            }  
+            .p_two {
+            text-align: center;
+            }
+        }   
+        .grid_item_blue {
+            width: 80%;
+            height: 100px;
+        }  
+        .p_three {
+            margin-left: 0;
+        }
+            
+        .p_four {
+            margin-left: 0;
+        } 
+        .grid_item_green {
+            width: 80%;
+            height: 100px;
+        }    
+        .grid_item_yellow {
+            width: 80%;
+            height: 100px;
+        }  
+        .grid_item_red {
+            width: 80%;
+            height: 100px;
+        }
+    }
+    /* ------------------------------------------------- */
+
+    /* ------------------BLUE BLOCK-------------------   */
+    .wrapper_blue_block {
+        ul {
+            text-align: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 0;
+        }
+    }
+    /* ------------------------------------------------- */
+
+    /* --------------------YELLOW BLOCK------------------- */
+    .events_lists {
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper_yellow_block .events li {
+        width: 100%;
+    }
+    .events_title {
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper_yellow_block .events_title .link {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    /* --------------------------------------------------- */
+
+    /* --------------ICE-CREAM (NEWS) BLOCK------------- */
+    .wrapper_news_block {
+        max-height: 100%;
+        .news_grid {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            .news_card_one_img1 {
+                max-width: 80%;
+            }
+            .news_card_one_img2 {
+                max-width: 80%;
+            }
+            .news_card_two {
+                margin: 0 50px;
+            }
+            .news_title {
+                display: flex;
+                font-size: 25px;
+                .news_link {
+                    font-size: 20px;
+                }
+            }
+
+        }
+    }   
+    /* ---------------------------------------------------- */
+
+    /* ----------------------FOOTER------------------------ */
+    .wrapper_footer {
+        text-align: center;
+        .footer_block {
+             margin-top: 30px;
+             .social_network_links {
+                display: flex;
+              }
+        }
+    }
+    /* ---------------------------------------------------- */
+}
+/* -------------------КОНЕЦ--РАЗМЕР--XS---------------------- */
+
+/* -------------------------РАЗМЕР--SM----------------------- */
+/* -------------------------НАВИГАЦИЯ------------------------ */
+@media (max-width: 768px) and (min-width: 576px) {
+    .wrapper_header {
+        background-size: cover;
+        max-width: 100%;
+        height: 900px;
+        .logo {
+            margin-left: 40px;
+        } 
+        .nav-list>ul {
+            margin-top: 20px;
+            margin-left: 40px;
+            li>a {
+                margin: 0;
+                padding-right: 30px;
+            }
+        }
+        .search {
+            margin-left: 0;
+        }
+    }
+    /* --------------------------------------------------- */
+
+    /* ----------------НАВИГАЦИЯ (БЛОКИ)------------------ */
+    .grid {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+        .grid_item {
+            display: none;
+            &_blue {
+                width: 80%;
+                height: 100px;
+            }
+            &_green {
+                width: 80%;
+                height: 100px;
+            }
+            &_yellow {
+                width: 80%;
+                height: 100px;
+            }
+            &_red {
+                width: 80%;
+                height: 100px;
+            }
+        }
+        .p_three {
+            margin-left: 0;
+        }
+    }
+    /* ------------------------------------------------ */
+
+    /* ------------------BLUE BLOCK-------------------- */
+    .wrapper_blue_block {
+        padding-bottom: 50px;
+        ul {
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 0;
+            padding-left: 10px;
+        }
+    }
+    /* ------------------------------------------------ */
+
+    /* --------------------YELLOW BLOCK------------------- */
+    .events_lists {
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper_yellow_block .events li {
+        width: 100%;
+    }
+    /* --------------------------------------------------- */
+
+    /* --------------ICE-CREAM (NEWS) BLOCK------------ */
+    .wrapper_news_block {
+        max-height: 100%;
+        .news_grid {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            .news_card_one_img1 {
+                margin: 0;
+            }
+              .news_card_two {
+                margin: 0 50px;
+            }
+        }
+    }   
+    /* ------------------------------------------------- */
+}
+/* --------------------КОНЕЦ--РАЗМЕР--SM------------------ */
+
+/* ---------------------------РАЗМЕР--MD---------------------------- */
+/* ---------------------НАВИГАЦИЯ------------------------- */
+@media (max-width: 992px) and (min-width: 768px) {
+    .wrapper_header {
+        background-size: cover;
+        max-width: 100%;
+        height: 800px;
+        .logo {
+            margin-left: 40px;
+        }
+        .nav-list>ul {
+            margin-top: 20px;
+            margin-left: 40px;
+            li>a {
+                margin: 0;
+                padding-right: 30px;
+            }
+        }
+        .search {
+            margin-left: 0;
+        }
+    }
+    /* --------------------------------------------------- */
+
+    /* ----------------НАВИГАЦИЯ (БЛОКИ)------------------ */
+    .grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+        .grid_item {
+            display: none;
+            &_title_two {
+                width: 100%;
+            }
+            &_blue {
+                width: 30%;
+                height: 100px;
+            }
+            &_green {
+                width: 30%;
+                height: 100px;
+            }
+            &_yellow {
+                width: 30%;
+                height: 100px;
+            }
+            &_red {
+                width: 30%;
+                height: 100px;
+            }
+        }
+        .p_three {
+            margin-left: 0;
+        }
+    }
+    /* ------------------------------------------------ */
+
+    /* --------------------BLUE BLOCK-------------------------   */
+    .wrapper_blue_block {
+        padding-bottom: 50px;
+        ul {
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 0;
+            padding-left: 10px;
+        }
+    }  
+    /* -------------------------------------------------- */
+
+    /* --------------------YELLOW BLOCK------------------- */
+    .events_lists {
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper_yellow_block .events li {
+        width: 100%;
+    }
+    /* --------------------------------------------------- */
+
+    /* --------------ICE-CREAM (NEWS) BLOCK------------- */
+    .wrapper_news_block {
+        max-height: 100%;
+        .news_grid {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            .news_card_one_img1 {
+                margin: 0;
+            }
+              .news_card_two {
+                margin: 0 50px;
+            }
+        }
+    }
+    /* ------------------------------------------------- */
+}
+/* -------------------КОНЕЦ--РАЗМЕР--MD------------------- */
+
+/* --------------------РАЗМЕР LG---------------------- */
+/* --------------------НАВИГАЦИЯ----------------------- */
+@media (max-width: 1200px) and (min-width: 992px) {
+    .wrapper_header {
+        background-size: cover;
+        max-width: 100%;
+        height: 600px;
+        .logo {
+            margin-left: 40px;
+        }
+        .nav-list>ul>li>a {
+            margin: 0;
+            padding-right: 30px;
+        }
+        .search {
+            margin-left: 0;
+        }
+    }
+    /* --------------------------------------------------- */
+
+    /* ----------------НАВИГАЦИЯ (БЛОКИ)------------------ */
+    .grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+        .grid_item {
+            display: none;
+            &_title_two {
+                width: 100%;
+            }
+            
+            &_blue {
+                width: 30%;
+                height: 100px;
+            }
+    
+            &_green {
+                width: 30%;
+                height: 100px;
+            }
+            
+            &_yellow {
+                width: 30%;
+                height: 100px;
+            }
+            
+            &_red {
+                width: 30%;
+                height: 100px;
+            }
+        }
+        .p_three {
+            margin-left: 0;
+        }
+    }   
+    /* ------------------------------------------------ */
+
+    /* -------------------BLUE BLOCK-----------------   */
+    .wrapper_blue_block {
+        padding-bottom: 50px;
+        ul {
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 0;
+        }
+    }  
+    /* ------------------------------------------------ */
+
+    /* --------------ICE-CREAM (NEWS) BLOCK------------- */
+    .wrapper_news_block {
+        max-height: 100%;
+        .news_grid {
+            display: flex;
+            flex-wrap: wrap;
+            .news_card_one_img1 {
+                margin: 0;
+            }
+        }
+    }
+    /* ------------------------------------------------- */
+}
+/* -------------------КОНЕЦ--РАЗМЕР--LG------------------ */
+
+/* --------------------РАЗМЕР XL---------------------- */
+/* --------------------НАВИГАЦИЯ-------------------- */
+@media (max-width: 1400px) and (min-width: 1200px) {
+    .wrapper_header{
+        background-size: cover;
+    }
+    .nav-list>ul>li>a {
+        margin: 0;
+        padding-right: 30px;
+    }
+    /* --------------------------------------------------- */
+
+    /* ------------------BLUE BLOCK---------------------   */
+    .wrapper_blue_block {
+        padding-bottom: 50px;
+        ul {
+            margin: 0;
+        }
+        li {
+            margin-bottom: 0;
+        }
+    }
+    /* ---------------------------------------------------- */
+}
+/* --------------------КОНЕЦ--РАЗМЕР--XL------------------- */
+
+/* -----------------------РАЗМЕР XXL----------------------- */
+/* -----------------------НАВИГАЦИЯ------------------------ */
+@media (min-width: 1400px) {
+    .wrapper_header{
+        background-size: cover;
+    }
+}
+/* -------------------КОНЕЦ--РАЗМЕР--XXL------------------- */
