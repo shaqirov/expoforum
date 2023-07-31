@@ -1,4 +1,4 @@
-/* --------------------Шрифты----------------------------- */
+/* --------------------Шрифты------------------------- */
 @font-face {
     font-family: Circe;
     src: url(../fonts/Circe-Regular.ttf) format(truetype);
@@ -11,7 +11,7 @@
     font-family: Plumb-bold;
     src: url(../fonts/plumb-bold.otf) format(opentype);
 }
-/* -------------------------------------------------------- */
+/* --------------------------------------------------- */
 
 * {
     /* border: 1px solid red; */
@@ -21,7 +21,7 @@
     text-decoration: none;
 }
 
-/* ----------------------НАВИГАЦИЯ--------------------------- */
+/* -------------------НАВИГАЦИЯ----------------------- */
 .wrapper_header {
     background-image: url(../images/bg_img.svg);
     background-size: 100%;
@@ -153,7 +153,7 @@
 }
 /* --------------------------------------------------- */
 
-/* ------------------BLUE BLOCK-------------------------   */
+/* ------------------BLUE BLOCK---------------------   */
 .wrapper_blue_block {
     background-color: #2378FC;
     color: white;
@@ -187,4 +187,69 @@
         margin-bottom: 102px;
     }
 }
-/* ------------------------------------------------ */
+/* --------------------------------------------------- */
+
+/* --------------------YELLOW BLOCK------------------- */
+.wrapper_yellow_block {
+    overflow: hidden;
+    position: relative;
+    min-height: 100%;
+    .events {
+        background-color: #FFC41E;
+        padding: 75px 0;
+        .container {
+            width: 100%;
+            max-width: 1170px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        &_title {
+            font-size: 30px;
+            margin-bottom: 55px;
+            font-family: Plumb;
+            .link {
+                margin-left: 40%;
+                color: #2E373B;
+                font-size: 21px;
+                font-family: Plumb;
+            }
+        }
+        &_lists {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
+        }
+        li {
+            width: 31%;
+            margin-bottom: 30px;
+            h3 {
+                margin: 10px 0px;
+                color: #f6404f;
+                font-size: 21px;
+                font-family: Plumb;
+                text-transform: uppercase;
+            }
+            h4 {
+                margin: 10px 0px;
+                color: #2E373B;
+                font-size: 14px;
+                font-family: Circe;
+            }
+            p {
+                margin: 10px 0px;
+                color: #2E373B;
+                font-size: 16px;
+                font-family: Circe;
+            }
+        }
+        &_img-wrapp {
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+    }
+}
+/* --------------------------------------------------- */
+
