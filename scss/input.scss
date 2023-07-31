@@ -153,3 +153,38 @@
 }
 /* --------------------------------------------------- */
 
+/* ------------------BLUE BLOCK-------------------------   */
+.wrapper_blue_block {
+    background-color: #2378FC;
+    color: white;
+    &_h1 {
+        font-family: Plumb;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    p>a {
+        color: white;
+    }
+    p>a:hover {
+        border-bottom: 2px solid white;
+        padding: 1px;
+    }
+    p>a:visited {
+        color: white;
+    }
+    p {
+        font-family: Circe;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 200px;
+    }
+    li {
+        margin-top: 48px;
+        margin-bottom: 102px;
+    }
+}
+/* ------------------------------------------------ */
