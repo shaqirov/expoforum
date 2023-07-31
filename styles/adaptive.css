@@ -310,13 +310,6 @@
   }
   /* -------------------------------------------------- */
   /* --------------------YELLOW BLOCK------------------- */
-  .events_lists {
-    display: flex;
-    flex-direction: column;
-  }
-  .wrapper_yellow_block .events li {
-    width: 100%;
-  }
   /* --------------------------------------------------- */
   /* --------------ICE-CREAM (NEWS) BLOCK------------- */
   .wrapper_news_block {
