@@ -253,3 +253,57 @@
 }
 /* --------------------------------------------------- */
 
+  /* --------------ICE-CREAM (NEWS) BLOCK------------- */
+  .wrapper_news_block {
+    background-color: #FAF3E3;
+    .news_grid {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+        grid-template-columns: 460px 460px;
+        padding-top: 85px;
+        gap: 125px;
+        .news_card_one_img1 {
+            margin-bottom: 59px;
+        }
+        .news_title {
+            font-family: Plumb;
+            color: #2E373B;
+            font-size: 30px;
+            margin-bottom: 30px;
+            .news_link {
+                font-family: Plumb;
+                color: #2E373B;
+                font-size: 21px;
+                text-decoration-line: underline;
+                margin-left: 40%;
+            }
+        }
+        .news_img_card {
+            display: flex;
+            margin-bottom: 38px;
+            gap: 30px;
+            align-items: center;
+            br {
+                margin-top: 14px;
+            }
+            .news_img {
+                max-width: 160px;
+                max-height: 120px;
+                &_date {
+                    font-family: Circe;
+                    font-size: 14px;
+                    color: #F6404F;
+                }
+                &_title {
+                    font-family: Plumb;
+                    font-size: 18px;
+                    color: #2E373B;
+                    font-weight: 700;
+                }
+            }
+        }
+
+    }
+}
+/* ---------------------------------------------------- */
