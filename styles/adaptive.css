@@ -9,19 +9,52 @@
     height: 1050px;
   }
   .wrapper_header .nav {
-    padding-top: 20px;
+    padding-top: 30px;
+  }
+  .wrapper_header [for=burger] {
+    display: block;
+    position: fixed;
+    width: 40px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    right: 20px;
+    z-index: 1;
+  }
+  .wrapper_header [for=burger]::before {
+    content: "☰";
   }
   .wrapper_header .logo {
     margin-left: 40px;
   }
-  .wrapper_header .nav-list > ul {
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 40px;
+  .wrapper_header nav {
+    display: none;
+    position: fixed;
+    top: 80px;
+    background: rgba(71, 71, 71, 0.8);
+    width: 100%;
+    z-index: 1;
   }
-  .wrapper_header .nav-list > ul > li > a {
-    margin: 0;
-    padding-right: 30px;
+  .wrapper_header #burger:checked + label + nav {
+    display: block;
+    animation: show 0.5s ease;
+  }
+  .wrapper_header #burger:checked + [for=burger]::before {
+    content: "✖";
+  }
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .wrapper_header .nav-list > ul {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 15px 0;
   }
   .wrapper_header .search {
     margin-left: 0;
@@ -41,9 +74,13 @@
   .grid .grid_item_title {
     justify-content: center;
   }
+  .grid .grid_item_title .title {
+    font-size: 40px;
+  }
   .grid .grid_item_title_two .p_one {
     justify-content: center;
     text-align: center;
+    font-size: 20px;
   }
   .grid .grid_item_title_two .p_two {
     text-align: center;
@@ -80,6 +117,8 @@
   }
   .wrapper_blue_block li {
     margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   /* ------------------------------------------------- */
   /* --------------------YELLOW BLOCK------------------- */
@@ -117,17 +156,21 @@
   .wrapper_news_block .news_grid .news_card_two {
     margin: 0 50px;
   }
+  .wrapper_news_block .news_grid .news_card_two .news_img_title {
+    font-size: 14px;
+  }
   .wrapper_news_block .news_grid .news_title {
     display: flex;
-    font-size: 25px;
+    font-size: 20px;
   }
   .wrapper_news_block .news_grid .news_title .news_link {
-    font-size: 20px;
+    font-size: 16px;
   }
   /* ---------------------------------------------------- */
   /* ----------------------FOOTER------------------------ */
   .wrapper_footer {
     text-align: center;
+    overflow: hidden;
   }
   .wrapper_footer .footer_block {
     margin-top: 30px;
